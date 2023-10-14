@@ -1,0 +1,15 @@
+{
+  "name": "twitch_chat_bot",
+  "version": "0.0.1",
+  "description": "twitch extension which sets up a chat bot for use with twitch chat",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "noiseylobster",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
