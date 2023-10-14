@@ -25,6 +25,13 @@ $(function () {
         }
 
         //Starting a connection with twitch chat
+        $.ajax({
+            type: 'POST',
+            url: location.protocol + '//localhost:3000/ConnectToChat',
+            headers: { 'Authorization': 'Bearer ' + token },
+            success: logSuccess, 
+            error: logError
+        });
     });
 
     $('#startPoll').click(function () {
@@ -33,6 +40,13 @@ $(function () {
         }
 
         //Starting chat polling window
+        $.ajax({
+            type: 'POST',
+            url: location.protocol + '//localhost:3000/StartPoll',
+            headers: { 'Authorization': 'Bearer ' + token },
+            success: logSuccess, 
+            error: logError
+        });
     });
 
     $('#endPoll').click(function () {
@@ -41,6 +55,13 @@ $(function () {
         }
 
         //Ending a chat polling window
+        $.ajax({
+            type: 'POST',
+            url: location.protocol + '//localhost:3000/EndPoll',
+            headers: { 'Authorization': 'Bearer ' + token },
+            success: logSuccess, 
+            error: logError
+        });
     });
 });
 
